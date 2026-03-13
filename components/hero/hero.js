@@ -32,6 +32,21 @@ const Hero = () => {
           Get A Free Quote ↗
         </a>
       </div>
+
+      <div className={styles.awardsCard}>
+        <div className={styles.groupIcon}>
+          <Image src="/group.png" alt="Users" width={96} height={32} style={{ objectFit: 'contain' }} />
+        </div>
+        <div className={styles.awardsCount}>50+</div>
+        <div className={styles.awardsTitle}>Awards Wining</div>
+        <div className={styles.graphIcon}>
+          <Image src="/graph.png" alt="Graph" width={160} height={40} style={{ objectFit: 'contain' }} />
+        </div>
+        
+        <div className={styles.lineIcon}>
+          <Image src="/line.png" alt="Pointer Line" width={24} height={90} style={{ objectFit: 'contain' }} />
+        </div>
+      </div>
     </div>
       <div className={styles.logoipsum}>
         <div className={styles.logoImage}>
