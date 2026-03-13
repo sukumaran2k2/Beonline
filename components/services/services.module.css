@@ -1,0 +1,179 @@
+.servicesSection {
+  padding: 100px 80px;
+  background-color: #f8f9fc;
+  font-family: var(--font-space-grotesk);
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.introBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 20px;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 700;
+  color: #05081c;
+  line-height: 1.2;
+  margin: 0 0 20px 0;
+  position: relative;
+}
+
+.titleHighlight {
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 180px;
+  height: auto;
+  z-index: 0;
+}
+
+.titleText {
+  position: relative;
+  z-index: 1;
+}
+
+.description {
+  font-size: 17.7px;
+  line-height: 1.6;
+  color: #666;
+  margin: 0 0 32px 0;
+}
+
+.talkBtn {
+  background-color: #fab713;
+  color: #05081c;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  transition: background-color 0.2s ease;
+  font-family: var(--font-space-grotesk);
+}
+
+.talkBtn:hover {
+  background-color: #e09510;
+}
+
+
+.card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  text-decoration: none;
+  overflow: hidden;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  background-color: #fab713;
+  color: #05081c;
+}
+
+.cardIcon {
+  width: 48px;
+  height: 48px;
+  background-color: #f0f2f5;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  transition: background-color 0.3s ease;
+}
+
+.card:hover .cardIcon {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.cardIcon svg {
+  width: 24px;
+  height: 24px;
+  color: #05081c;
+}
+
+.cardTitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: #05081c;
+  margin: 0 0 16px 0;
+}
+
+.cardDesc {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666;
+  margin: 0 0 32px 0;
+  flex-grow: 1;
+  transition: color 0.3s ease;
+}
+
+.card:hover .cardDesc {
+  color: #1a1a1a;
+}
+
+.cardLink {
+  font-size: 16px;
+  font-weight: 600;
+  color: #05081c;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: auto;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .servicesSection {
+    padding: 60px 24px;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+
+  .introBox {
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .card {
+    padding: 30px;
+  }
+}

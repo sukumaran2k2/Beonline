@@ -1,0 +1,217 @@
+.partnersSection {
+  padding: 100px 80px;
+  background-color: #ffffff;
+  font-family: var(--font-space-grotesk);
+}
+
+.partnersHeader {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.partnersTitle {
+  font-size: 40px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.highlightText {
+  color: #fab713;
+}
+
+.partnersGrid {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 24px;
+  flex-wrap: wrap; 
+  max-width: 100%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.partnerCard {
+  flex: 1; 
+  min-width: 160px; 
+  max-width: 240px;
+  height: 120px; 
+  background: #ffffff;
+  border: 1px solid #f0f0f0;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  overflow: hidden; 
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+
+.partnerCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.scaleSmall {
+  transform: scale(0.85);   
+}
+
+.scaleLarge {
+  transform: scale(1.4); 
+}
+
+.scaleExtraLarge {
+  transform: scale(1.9); 
+}
+
+.scaleHuge {
+  transform: scale(3.1); 
+}
+
+.partnerLogo {
+  object-fit: contain;
+  width: 100% !important;
+  height: 100% !important;
+  position: relative !important;
+}
+
+
+.toolsSection {
+  margin-top: 100px;
+}
+
+.toolsTitle {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 50px;
+}
+
+.toolsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.toolCard {
+  height: 80px;
+  background: #ffffff;
+  border: 1px solid #f0f0f0;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+  padding: 16px;
+}
+
+.toolCard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+}
+
+.toolLogo {
+  object-fit: contain;
+  width: 100% !important;
+  height: 100% !important;
+  position: relative !important;
+}
+
+@media (max-width: 1024px) {
+  .toolsGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .scaleHuge {
+    transform: scale(
+      2.2
+    ); 
+  }
+  .scaleExtraLarge {
+    transform: scale(1.5);
+  }
+  .scaleLarge {
+    transform: scale(1.2);
+  }
+
+  .partnersSection {
+    padding: 60px 24px;
+  }
+
+  .partnersTitle {
+    font-size: 32px;
+  }
+
+  .partnersGrid {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: flex-start;
+    padding-bottom: 10px;
+    gap: 24px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .partnersGrid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .partnerCard {
+    width: auto;
+    min-width: 200px;
+    flex-shrink: 0;
+  }
+
+  .toolsGrid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: flex-start;
+    padding-bottom: 10px;
+    gap: 24px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .toolsGrid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .toolCard {
+    min-width: 200px;
+    padding: 10px;
+    flex-shrink: 0;
+  }
+
+  .toolsTitle {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .partnerCard {
+    min-width: 180px;
+  }
+
+  .toolCard {
+    min-width: 160px;
+  }
+}

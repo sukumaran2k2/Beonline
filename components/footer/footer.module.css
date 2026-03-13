@@ -1,0 +1,291 @@
+.footerWrapper {
+  position: relative;
+  margin-top: 280px;
+  background-color: #05081c;
+  color: #ffffff;
+  padding: 220px 80px 40px;
+  font-family: var(--font-space-grotesk);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ctaCard {
+  position: absolute;
+  top: -220px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 160px);
+  max-width: 1200px;
+  background-color: #fab713;
+  border-radius: 40px;
+  padding: 60px 40px;
+  text-align: center;
+  color: #05081c;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.ctaHeading {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0 0 16px;
+}
+
+.ctaSub {
+  font-size: 16px;
+  max-width: 600px;
+  margin: 0 auto 32px;
+  line-height: 1.5;
+  color: #2f2f2f;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.featureItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.checkIcon {
+  width: 20px;
+  height: 20px;
+  background-color: #05081c;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fab713;
+}
+
+.checkIcon svg {
+  width: 12px;
+  height: 12px;
+}
+
+.ctaBtn {
+  background-color: #05081c;
+  color: #ffffff;
+  border: none;
+  padding: 16px 32px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-family: var(--font-space-grotesk);
+}
+
+.ctaBtn:hover {
+  background-color: #1a1a1a;
+}
+
+.footerContent {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+  font-size: 18px;
+}
+
+.colBrand {
+  flex: 2;
+  min-width: 280px;
+}
+
+.logoTitle {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.logoHighlight {
+  color: #fab713;
+}
+
+.logoSubtitle {
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: #a0a3b5;
+}
+
+.colBrand p {
+  color: #a0a3b5;
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 24px 0;
+  max-width: 300px;
+}
+
+.socials {
+  display: flex;
+  gap: 16px;
+}
+
+.socialIcon {
+  color: #ffffff;
+  transition: color 0.2s;
+}
+
+.socialIcon:hover {
+  color: #fab713;
+}
+
+.colLinks {
+  flex: 1;
+  min-width: 140px;
+}
+
+.colHeading {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 24px;
+}
+
+.colLinks ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.colLinks a {
+  color: #a0a3b5;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.2s;
+}
+
+.colLinks a:hover {
+  color: #fab713;
+}
+
+.colSubscribe {
+  flex: 1.5;
+  min-width: 280px;
+}
+
+.inputGroup {
+  display: flex;
+  margin-bottom: 16px;
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  height: 52px;
+}
+
+.input {
+  flex: 1;
+  border: none;
+  padding: 0 16px;
+  font-family: var(--font-space-grotesk);
+  font-size: 16px;
+  outline: none;
+  color: #05081c;
+}
+
+.input::placeholder {
+  color: #999;
+
+}
+
+.submitBtn {
+  background-color: #fab713;
+  color: #05081c;
+  border: none;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.submitBtn:hover {
+  background-color: #e09510;
+}
+
+.agreement {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #a0a3b5;
+  font-size: 15px;
+}
+
+.agreement input[type="checkbox"] {
+  accent-color: #fab713;
+}
+
+.divider {
+  width: 100%;
+  max-width: 1200px;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-bottom: 24px;
+}
+
+.bottomBar {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  color: #a0a3b5;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.address {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+@media (max-width: 1024px) {
+  .footerWrapper {
+    padding: 240px 48px 40px;
+  }
+  .ctaCard {
+    width: calc(100% - 96px);
+  }
+}
+
+@media (max-width: 768px) {
+  .footerWrapper {
+    margin-top: 380px;
+    padding: 220px 24px 32px;
+  }
+  .ctaCard {
+    top: -360px;
+    width: calc(100% - 48px);
+    padding: 40px 24px;
+  }
+  .ctaHeading {
+    font-size: 28px;
+  }
+  .footerContent {
+    flex-direction: column;
+    gap: 32px;
+  }
+  .bottomBar {
+    flex-direction: column;
+    text-align: center;
+  }
+}
